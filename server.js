@@ -13,8 +13,8 @@ var DEBUGPREFIX = "DEBUG: ";
 
 var config = {
   "db": {
-    "port": 27017,
-    "host": "localhost"
+    "port": process.env.CREST_DB_PORT,
+    "host": process.env.CREST_DB_HOST
   },
   "server": {
     "port": 3500,
